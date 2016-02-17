@@ -40,7 +40,7 @@ JdgBZ1ABr6Hq0KzACwFjsq6ybJOAstuqyL1SACri
         
         path2check = '/test'
         cert = certificate.create_from_pem(client_cert)
-        cert.check_path('/')
+        cert.check_path('/') # AttributeError: 'NoneType' object has no attribute 'value' 
         pass    
     
 
